@@ -1,0 +1,53 @@
+table {
+  border-collapse: collapse;
+  display: table-cell;
+  margin-left: 16px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+table tr {
+  border-bottom: 1px solid #bbb;
+  cursor: pointer;
+  background-color: white;
+  /* display: table-cell; */
+}
+
+table thead th {
+  position: sticky;
+  top: 0;
+  background: #eceef1;
+  text-align: left;
+  border-right: 1px solid #bbb;
+  z-index: 2;
+  min-width: 143px;
+  /* min-height: 34px; */
+}
+
+th,
+td {
+  height: 34px;
+  padding: 5px 10px;
+  border-bottom: 1px dotted #c7c7c7;
+  border-right: 1px dotted #c7c7c7;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+table tbody tr:hover {
+  background-color: #d4f0f0;
+}
+
+table tbody tr:focus {
+  background-color: #aac5c5;
+}
+
+body {
+  font-family: GoogleSans-Regular;
+  font-size: 13px;
+}
+
+@font-face {
+  font-family: "GoogleSans-Regular";
+  src: url("../../assets/font/GoogleSans-Regular.otf") format("opentype");
+}

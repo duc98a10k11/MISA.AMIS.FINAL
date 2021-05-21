@@ -1,0 +1,56 @@
+input {
+  border: none;
+  border-radius: 2px;
+  height: 32px;
+  color: #000000;
+  padding: 6px 10px;
+  /* padding-left: 16px;
+    padding-right: 16px; */
+  border: 1px solid #babec5;
+  font-family: GoogleSans-Regular;
+  outline: none;
+}
+
+.input-search {
+  background-image: url("../../assets/icon/search.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 175px;
+  background-size: 16px;
+  padding-right: 40px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+input:hover {
+  border: 1px solid #2ca01c;
+}
+
+input:focus {
+  border-color: #2ca01c;
+  color: black;
+  font-size: 13px;
+}
+
+.input-search2 {
+  background-image: url("../../assets/icon/search.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 214px;
+  background-size: 16px;
+  padding-right: 40px;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+input[title]:hover::after {
+  content: attr(title);
+  background-color: #000;
+  color: white;
+}
+
+[data-title]::after {
+  content: attr(data-title);
+  background-color: #000;
+  color: white;
+}

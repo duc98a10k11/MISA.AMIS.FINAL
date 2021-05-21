@@ -1,0 +1,14 @@
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\bin\Debug\net5.0\MISA.AMIS.Core.deps.json
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\bin\Debug\net5.0\MISA.AMIS.Core.dll
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\bin\Debug\net5.0\ref\MISA.AMIS.Core.dll
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\bin\Debug\net5.0\MISA.AMIS.Core.pdb
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.csprojAssemblyReference.cache
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.Properties.Resources.resources
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.csproj.GenerateResource.cache
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.AssemblyInfoInputs.cache
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.AssemblyInfo.cs
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.csproj.CoreCompileInputs.cache
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.dll
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\ref\MISA.AMIS.Core.dll
+D:\DUC\MISA.FRESHER.TEST\web04a-mf819-lmduc\API\MISA.AMIS\MISA.AMIS.Core\obj\Debug\net5.0\MISA.AMIS.Core.pdb
