@@ -413,9 +413,14 @@ export default {
           this.$emit("hideDialog");
         })
         .catch((res) => {
+          this.messageCode =
+            "Mã nhân viên <" +
+            this.employee.employeeCode +
+            "> đã tồn tại trong hệ thống, vui lòng kiểm tra lại.";
+            this.valuePopup = true;
           console.log(res.data);
           console.log(this.employee);
-          this.$emit("hideDialog");
+          // this.$emit("hideDialog");
         });
     },
     /**
@@ -443,6 +448,7 @@ export default {
       //     })
 
       //Modified
+      
       if (this.flag == "edit") {
         this.putEmployee();
       } else {

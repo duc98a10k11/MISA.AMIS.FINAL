@@ -38,10 +38,10 @@
         <table class="tblListEmployee" width="100%">
           <thead>
             <tr>
-              <td class="table-input-checkbox fix-left">
+              <td class="table-input-checkbox fix-left" >
                 <input type="checkbox" class="check-box" />
               </td>
-              <th style="min-width: 130px">MÃ NHÂN VIÊN</th>
+              <th style="min-width: 130px; border-left:none;">MÃ NHÂN VIÊN</th>
               <th style="min-width: 200px">TÊN NHÂN VIÊN</th>
               <th>GIỚI TÍNH</th>
               <th style="align-items: center;text-align: center;">NGÀY SINH</th>
@@ -784,9 +784,12 @@ th {
   background: #fff;
 }
 .table-input-checkbox {
+  border-right: 1px solid #c7c7c7;
   background-color: #eceef1;
   max-width: 40px !important;
-  width: 34px;
+  align-items: center;
+  /* display: flex; */
+  width: 40px;
 }
 .item .item-right {
   display: flex;

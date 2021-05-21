@@ -40,9 +40,9 @@ namespace MISA.AMIS.Core.Services
         /// false - không bi trùng
         /// </returns>
         /// CreatedBy: LMDuc (18/05/2021)
-        public bool CheckEmployeeCodeExist(string employeeCode)
+        public bool CheckEmployeeCodeExist(string employeeCode, Guid? employeeId)
         {
-            return _employeeRepository.CheckEmployeeCodeExist(employeeCode);
+            return _employeeRepository.CheckEmployeeCodeExist(employeeCode,employeeId);
         }
 
         /// <summary>
@@ -165,7 +165,7 @@ namespace MISA.AMIS.Core.Services
         {
 
             // Check trùng mã code
-            if (CheckEmployeeCodeExist(employee.EmployeeCode) == true)
+            if (CheckEmployeeCodeExist(employee.EmployeeCode,employee.EmployeeId) == true)
             {
                 throw new EmployeeException(Properties.Resources.Msg_Code_Exist);
             }

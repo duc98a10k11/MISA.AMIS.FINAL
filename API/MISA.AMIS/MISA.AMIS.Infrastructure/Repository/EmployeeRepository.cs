@@ -2,6 +2,7 @@
 using MISA.AMIS.Core.Entities;
 using MISA.AMIS.Core.Interfaces.Repositories;
 using MySqlConnector;
+using System;
 using System.Data;
 
 namespace MISA.AMIS.Infrastructure.Repository
@@ -29,12 +30,13 @@ namespace MISA.AMIS.Infrastructure.Repository
         /// false - không bị trùng
         /// </returns>
         /// CreatedBy: LMDuc (11/05/2021)
-        public bool CheckEmployeeCodeExist(string employeeCode)
+        public bool CheckEmployeeCodeExist(string employeeCode, Guid? employeeId)
         {
             using (dbConnection = new MySqlConnection(connectionString))
             {
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("EmployeeCode", employeeCode);
+                parameters.Add("EmployeeId", employeeId);
                 // thực hiện query
                 var result = dbConnection.QueryFirstOrDefault<bool>($"Proc_CheckEmployeeCodeExist", param: parameters, commandType: CommandType.StoredProcedure);
                 return result;

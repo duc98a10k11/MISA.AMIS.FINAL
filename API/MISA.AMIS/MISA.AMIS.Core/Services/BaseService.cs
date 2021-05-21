@@ -135,6 +135,7 @@ namespace MISA.AMIS.Core.Services
         /// CreatedBy: LMDuc (18/05/2021)
         public int Update(Guid entityId, MISAEntity entity)
         {
+            Validate(entity);
             return _baseRepository.Update(entityId, entity);
         }
 

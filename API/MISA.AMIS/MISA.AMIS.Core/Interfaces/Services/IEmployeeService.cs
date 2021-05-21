@@ -31,7 +31,7 @@ namespace MISA.AMIS.Core.Interfaces.Services
         /// false - không bi trùng
         /// </returns>
         /// CreatedBy: LMDuc (18/05/2021)
-        public bool CheckEmployeeCodeExist(string employeeCode);
+        public bool CheckEmployeeCodeExist(string employeeCode, Guid?  employeeId);
 
         /// <summary>
         /// Phân trang
