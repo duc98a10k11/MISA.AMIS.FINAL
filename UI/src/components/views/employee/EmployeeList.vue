@@ -38,7 +38,7 @@
         <table class="tblListEmployee" width="100%">
           <thead>
             <tr>
-              <td class="table-input-checkbox fix-left" >
+              <td class="table-input-checkbox fix-left">
                 <input type="checkbox" class="check-box" />
               </td>
               <th style="min-width: 130px; border-left:none;">MÃ NHÂN VIÊN</th>

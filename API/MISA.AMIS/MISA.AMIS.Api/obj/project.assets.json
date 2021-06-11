@@ -4818,11 +4818,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Api\\MISA.AMIS.Api.csproj",
+      "projectUniqueName": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Api\\MISA.AMIS.Api.csproj",
       "projectName": "MISA.AMIS.Api",
-      "projectPath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Api\\MISA.AMIS.Api.csproj",
+      "projectPath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Api\\MISA.AMIS.Api.csproj",
       "packagesPath": "C:\\Users\\lmduc\\.nuget\\packages\\",
-      "outputPath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Api\\obj\\",
+      "outputPath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lmduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4839,11 +4839,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj": {
-              "projectPath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj"
+            "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj": {
+              "projectPath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj"
             },
-            "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Infrastructure\\MISA.AMIS.Infrastructure.csproj": {
-              "projectPath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Infrastructure\\MISA.AMIS.Infrastructure.csproj"
+            "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Infrastructure\\MISA.AMIS.Infrastructure.csproj": {
+              "projectPath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Infrastructure\\MISA.AMIS.Infrastructure.csproj"
             }
           }
         }

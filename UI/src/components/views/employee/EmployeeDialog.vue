@@ -417,7 +417,7 @@ export default {
             "Mã nhân viên <" +
             this.employee.employeeCode +
             "> đã tồn tại trong hệ thống, vui lòng kiểm tra lại.";
-            this.valuePopup = true;
+          this.valuePopup = true;
           console.log(res.data);
           console.log(this.employee);
           // this.$emit("hideDialog");
@@ -430,25 +430,6 @@ export default {
      * ModifiedBy: LMDuc (19/05/2021)
      */
     btnYesChangeClick() {
-      //  axios.post(myhost+'/api/v1/Employees', this.employee).then(res =>{
-      //       console.log(res.data);
-      //       console.log(this.message);
-      //       this.$emit('hideDialog');
-      //     }).catch(res =>{
-      //         // this.message = res.response.data.devMsg;
-      //         this.messageCode = "Mã nhân viên <"+this.employee.employeeCode+"> đã tồn tại trong hệ thống, vui lòng kiểm tra lại.";
-      //       // }
-      //       console.log(res.response.data.devMsg);
-      //       // show popup
-      //       this.valuePopup = true;
-
-      //       console.log(this.message);
-      //       console.log(this.employee);
-      //       // this.$emit('hideDialog');
-      //     })
-
-      //Modified
-      
       if (this.flag == "edit") {
         this.putEmployee();
       } else {
@@ -477,59 +458,7 @@ export default {
         this.messageChange = "Dữ liệu đã bị thay đổi. Bạn có muốn cất không?";
         this.valuePopup = true;
       }
-
       //****  End Modified    *********** */
-
-      //kiểm tra xem dữ liệu đã thay đổi hay chưa nếu chưa thay đổi thì tắt Employeedialog
-      // if(this.flag == "add"){
-      // if((this.employee.employeeName == "" || this.employee.employeeName == null) &&
-      //   (this.employee.dateOfBirth == null) &&
-      //   (this.employee.identityNumber == null ||this.employee.identityNumber == "" )&&
-      //    (this.employee.identityDate == null )&&
-      //    (this.employee.identityPlace == null || this.employee.identityPlace == "") &&
-      //   (this.employee.email == null || this.employee.email == "") &&
-      //   (this.employee.phoneNumber == null || this.employee.phoneNumber =="")&&
-      //   (this.employee.address == null || this.employee.address == "")&&
-      //   (this.employee.bankAccountNumber == null || this.employee.bankAccountNumber =="")&&
-      //   (this.employee.bankName == null || this.employee.bankName == "")&&
-      //   (this.employee.bankBranchName == null || this.employee.bankBranchName =="")&&
-      //   (this.employee.telephoneNumber == null || this.employee.telephoneNumber =="")&&
-      //   (this.employee.employeePosition == null || this.employee.employeePosition =="") )
-      //  if(JSON.stringify(this.employeeTemp) === JSON.stringify(this.employee) )
-      //   {
-      //   this.$emit('hideDialogNotLoad');
-      // }else{
-      //   this.messageChange = "Dữ liệu đã bị thay đổi. Bạn có muốn cất không?"
-      //   this.valuePopup =true;
-      //   // this.flag = null
-      // }
-      // }else
-      // if(this.flag =="edit") //kiểm tra cờ xóa
-      // {
-      //   this.messageChange = null;
-      //   if(JSON.stringify(this.employeeTemp) === JSON.stringify(this.employee) )
-      //   {
-      //     this.$emit('hideDialogNotLoad');
-      //   }else{
-      //     this.messageChange = "Dữ liệu đã bị thay đổi. Bạn có muốn cất không?"
-      //     this.valuePopup =true;
-      //   }
-      // }else{ // còn lại là cờ nhân bản
-      // if(this.employee.employeeName == this.employeeTemp.employeeName && this.employee.identityNumber == this.employeeTemp.identityNumber &&
-      //     this.employee.identityPlace == this.employeeTemp.identityPlace && this.employee.email == this.employeeTemp.email &&
-      //     this.employee.phoneNumber == this.employeeTemp.phoneNumber && this.employee.address == this.employeeTemp.address &&
-      //     this.employee.bankAccountNumber == this.employeeTemp.bankAccountNumber && this.employee.bankName == this.employeeTemp.bankName &&
-      //     this.employee.bankBranchName == this.employeeTemp.bankBranchName && this.employee.telephoneNumber == this.employeeTemp.telephoneNumber &&
-      //     this.employee.employeePosition == this.employeeTemp.employeePosition)
-      //   if(JSON.stringify(this.employeeTemp) === JSON.stringify(this.employee))
-      //   {
-      //     this.$emit('hideDialogNotLoad');
-      //   }
-      //   else{
-      //     this.messageChange = "Dữ liệu đã bị thay đổi. Bạn có muốn cất không?"
-      //     this.valuePopup =true;
-      //   }
-      // }
     },
     /* 
     Đóng dialog mà không load lại dữ liệu
@@ -544,17 +473,11 @@ export default {
       this.messageChange = null;
       this.employee = {};
     },
-
     /**
-     * Click nút cất và thêm
-     * CreatedBy: LMDuc(17/05/2021)
-     * Modified: sử dụng method getMaxEmployeeCode thay vì viết trực tiếp axios lấy mã nhân viên lớn nhất
-     * ModifiedBy: LMDuc (19/05/2021)
+     * Kiểm tra emloyee để trống
+     * CreatedBy: LMDuc (11/05/2021)
      */
-    btnSaveClickMore() {
-      this.messageChange = null;
-      this.messageCode = null;
-      // kiểm tra các trường bắt buộc nhập
+    checkEmployee() {
       if (
         this.employee.employeeCode == "" ||
         this.employee.departmentId == null ||
@@ -577,6 +500,22 @@ export default {
           this.message += " Không được để trống phòng ban";
           this.$refs.departmentId.focus();
         }
+
+        return true;
+      } else return false;
+    },
+
+    /**
+     * Click nút cất và thêm
+     * CreatedBy: LMDuc(17/05/2021)
+     * Modified: sử dụng method getMaxEmployeeCode thay vì viết trực tiếp axios lấy mã nhân viên lớn nhất
+     * ModifiedBy: LMDuc (19/05/2021)
+     */
+    btnSaveClickMore() {
+      this.messageChange = null;
+      this.messageCode = null;
+      // kiểm tra các trường bắt buộc nhập
+      if (this.checkEmployee()) {
         this.valuePopup = true;
       } else {
         this.message = null;
@@ -589,21 +528,6 @@ export default {
             //lấy mã nhân viên lớn nhất
             this.getMaxEmployeeCode();
             this.employeeTemp = Object.assign({}, this.employee);
-            //lấy mã nhân viên lớn nhất
-            // axios.get(myhost+"/api/v1/Employees/employeeCode")
-            //     .then((response) => {
-            //       console.log(response.data);
-            //       var increCode = response.data;
-            //       // Cắt chuỗi trả về
-            //       increCode = increCode.substring(3);
-            //       // Gán tất cả các ô data của dialog rỗng
-            //       this.employee = {};
-            //       // Gán code Max cho ô Mã nhân viên
-            //       this.employee.employeeCode = "NV-" + (Number(increCode) + 1);
-            //     })
-            //     .catch((response) => {
-            //       console.log(response);
-            //     });
           })
           .catch((res) => {
             this.messageCode =
@@ -627,26 +551,7 @@ export default {
       this.messageChange = null;
       this.messageCode = null;
       // kiểm tra các trường bắt buộc nhập
-      if (
-        this.employee.departmentId == null ||
-        this.employee.employeeName == null ||
-        this.employee.employeeName == "" ||
-        this.employee.employeeCode == ""
-      ) {
-        this.message = "";
-        if (this.employee.employeeCode == "") {
-          this.message = "Mã nhân viên không được để trống";
-          this.$refs.employeeCode.focus();
-        } else if (
-          this.employee.employeeName == null ||
-          this.employee.employeeName == ""
-        ) {
-          this.message = "Tên không được để trống \n";
-          this.$refs.employeeName.focus();
-        } else if (this.employee.departmentId == null) {
-          this.message = "Đơn vị không được để trống";
-          // this.$refs.employeeCode.focus()
-        }
+      if (this.checkEmployee()) {
         this.valuePopup = true;
       } else {
         this.message = null;
@@ -678,7 +583,7 @@ export default {
       }
     },
   },
-  mounted: function () {
+  mounted: function() {
     axios
       .get(myhost + "/api/v1/Departments")
       .then((res) => {

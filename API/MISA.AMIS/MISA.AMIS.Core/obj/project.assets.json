@@ -4490,11 +4490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj",
+      "projectUniqueName": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj",
       "projectName": "MISA.AMIS.Core",
-      "projectPath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj",
+      "projectPath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj",
       "packagesPath": "C:\\Users\\lmduc\\.nuget\\packages\\",
-      "outputPath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Core\\obj\\",
+      "outputPath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lmduc\\AppData\\Roaming\\NuGet\\NuGet.Config",

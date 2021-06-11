@@ -224,17 +224,7 @@ export default {
   left: 0;
   display: none;
 }
-/* .menu-item:target {
-  
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background: rgb(51, 191, 34);
-  top: 0;
-  left: 0;
-  display: none;
-} */
+
 .menu-item:hover {
   background: rgba(255, 255, 255, 0.2);
 }

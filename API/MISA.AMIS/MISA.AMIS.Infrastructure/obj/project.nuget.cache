@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VHmlu6j0qen63Tkikp/7s1LUZm1prv2mCn78Xzo6fI9n7F6T4c6HkyGc8T3lI4gYE54bjyGv2ZYcb5wiTcD+bQ==",
+  "dgSpecHash": "JrfSWXWq45wkabqo8PTprpKOC2G9tUqmSmQxN48t2CxZbqp6cHbOKQ7li1fLP7mw9hFhtIYN4rma4uiX/Thm6w==",
   "success": true,
-  "projectFilePath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Infrastructure\\MISA.AMIS.Infrastructure.csproj",
+  "projectFilePath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Infrastructure\\MISA.AMIS.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lmduc\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\lmduc\\.nuget\\packages\\epplus\\5.6.3\\epplus.5.6.3.nupkg.sha512",

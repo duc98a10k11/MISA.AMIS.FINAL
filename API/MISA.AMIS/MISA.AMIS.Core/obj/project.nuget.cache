@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LWiEJ86lZnfxkwTJ6vKhHa5TmxO2tpy1kAdDckVABWN+1VhlqR+pDAgfFoTm1ypZNANuQxkUgLhoRX5Ahy7tPA==",
+  "dgSpecHash": "aX7MdWG6CoMy7rerR08E/kjzGFRQR9QomvaE0G4IoYcg3qroDUMd67sv68SEcuV4BcAfgslLG6p5e380+UjCwQ==",
   "success": true,
-  "projectFilePath": "D:\\DUC\\MISA.FRESHER.TEST\\web04a-mf819-lmduc\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj",
+  "projectFilePath": "D:\\MISA.AMIS.FINAL\\API\\MISA.AMIS\\MISA.AMIS.Core\\MISA.AMIS.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lmduc\\.nuget\\packages\\epplus\\5.6.3\\epplus.5.6.3.nupkg.sha512",
     "C:\\Users\\lmduc\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
